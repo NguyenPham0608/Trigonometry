@@ -95,7 +95,7 @@ function update(){
     drawText(
         "tan(θ) = "+tan.toFixed(2),
         {x:-offset.x/1.1, y:offset.y*0.9},
-        "magenta"
+        "green"
     )
 
     
@@ -110,8 +110,8 @@ function update(){
     drawText("cos", average(A,C), "blue")
     drawLine(B,C, "red")
     drawText("sin", average(C,B), "red")
-    drawLine(B,T,"magenta")
-    drawText("tan", average(B,T),"magenta")
+    drawLine(B,T,"green")
+    drawText("tan", average(B,T),"green")
 
     drawText("θ",A)
 
@@ -134,7 +134,7 @@ function update(){
     drawPoint({
         x:-theta*chartScaler,
         y:tan*chartScaler
-    },4,"magenta")
+    },4,"green")
 
     requestAnimationFrame(update)
 }
